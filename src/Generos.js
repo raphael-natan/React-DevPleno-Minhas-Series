@@ -59,7 +59,6 @@ const Generos = () => {
                     {data.map(renderizaLinha)}
                 </tbody>
             </table>
-            {/* <pre>{JSON.stringify(data)}</pre> */}
         </div>
     )
 }
