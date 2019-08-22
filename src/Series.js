@@ -32,7 +32,7 @@ const Series = () => {
         )
     }
 
-    if (data.length === 0) {
+    if (data.lenght === 0) {
         return (
             <div className='container'>
                 <h1>Séries</h1>
