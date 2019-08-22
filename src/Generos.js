@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 const Generos = () => {
-    const [data, setData] = useState([0])
+    const [data, setData] = useState([])
     useEffect(() => {
         axios.get('/api/genres')
             .then(res => {
@@ -32,7 +32,7 @@ const Generos = () => {
         )
     }
 
-    if (Object.keys(data).length === 0) {
+    if (data.length === 0) {
         return (
             <div className='container'>
                 <h1>Gêneros</h1>
