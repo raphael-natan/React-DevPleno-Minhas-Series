@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 const Series = () => {
-    const [data, setData] = useState([''])
+    const [data, setData] = useState([0])
     useEffect(() => {
         axios.get('/api/series')
             .then(res => {
