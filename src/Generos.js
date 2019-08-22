@@ -32,7 +32,7 @@ const Generos = () => {
         )
     }
 
-    if (data.length === 0) {
+    if (Object.keys(data).length === 0) {
         return (
             <div className='container'>
                 <h1>Gêneros</h1>
