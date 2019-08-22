@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 const Series = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([''])
     useEffect(() => {
         axios.get('/api/series')
             .then(res => {
@@ -32,7 +32,7 @@ const Series = () => {
         )
     }
 
-    if (data.lenght === 0) {
+    if (data.length === 0) {
         return (
             <div className='container'>
                 <h1>Séries</h1>
